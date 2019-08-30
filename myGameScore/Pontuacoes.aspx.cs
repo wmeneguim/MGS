@@ -15,6 +15,7 @@ public partial class Pontuacoes : System.Web.UI.Page
     {
         try
         {
+            //
             if (!IsPostBack)
                 LimparCampos();
         }
