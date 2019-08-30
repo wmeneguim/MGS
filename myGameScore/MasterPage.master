@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>My Game Score</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.css" type="text/css" rel="stylesheet" />
+    <link href="Content/jquery-ui.css" type="text/css" rel="stylesheet" />
+    <link href="Content/sweetalert2.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/sweetalert2.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+                <a class="navbar-brand text-white" href="#">My Game Score</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        <div class="container body-content">
+            <asp:ScriptManager runat="server" EnablePageMethods="true" EnablePartialRendering="true" EnableViewState="true"></asp:ScriptManager>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script type="text/javascript">
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_endRequest(function (s, e) {
+            SetarCalendario();
+        });
+
+        function pageLoad() {
+            SetarCalendario();
+        }
+
+        function SetarCalendario() {
+            $('.datepicker').datepicker({
+                dateFormat: "dd/mm/yy",
+                changeYear: true,
+                selectOtherMonths: true
+            });
+        }
+    </script>
+</body>
+</html>

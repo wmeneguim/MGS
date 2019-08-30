@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "myGameScore", "myGameScore\", "{92687D84-8A12-4CE5-8A9F-0B4919B718C2}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{57e0c7a5-15f0-4224-916f-51825124171d}|Model.dll;{a73cc670-4b88-4c5a-9d48-b02861b90495}|BLL.dll;{E640FB05-B7D0-47C1-8D59-5667F1D5FC38}|DAO.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57153"
+		Debug.AspNetCompiler.PhysicalPath = "myGameScore\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57153\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57153"
+		Release.AspNetCompiler.PhysicalPath = "myGameScore\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57153\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57153"
+		SlnRelativePath = "myGameScore\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{A73CC670-4B88-4C5A-9D48-B02861B90495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{E640FB05-B7D0-47C1-8D59-5667F1D5FC38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{57E0C7A5-15F0-4224-916F-51825124171D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92687D84-8A12-4CE5-8A9F-0B4919B718C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92687D84-8A12-4CE5-8A9F-0B4919B718C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92687D84-8A12-4CE5-8A9F-0B4919B718C2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{92687D84-8A12-4CE5-8A9F-0B4919B718C2}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A73CC670-4B88-4C5A-9D48-B02861B90495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73CC670-4B88-4C5A-9D48-B02861B90495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73CC670-4B88-4C5A-9D48-B02861B90495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73CC670-4B88-4C5A-9D48-B02861B90495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E640FB05-B7D0-47C1-8D59-5667F1D5FC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E640FB05-B7D0-47C1-8D59-5667F1D5FC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E640FB05-B7D0-47C1-8D59-5667F1D5FC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E640FB05-B7D0-47C1-8D59-5667F1D5FC38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E0C7A5-15F0-4224-916F-51825124171D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E0C7A5-15F0-4224-916F-51825124171D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E0C7A5-15F0-4224-916F-51825124171D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E0C7A5-15F0-4224-916F-51825124171D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B9C01A9-8790-4830-AC78-2269DA67E7E7}
+	EndGlobalSection
+EndGlobal
